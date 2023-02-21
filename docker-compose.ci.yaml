@@ -16,11 +16,6 @@ services:
       - 1080
       - 1025
 
-  redis:
-    image: redis:7-alpine
-    expose:
-      - 6379
-
   api:
     build:
       context: .
