@@ -21,6 +21,7 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test:ts-node": "tsc --noEmit && node --loader tsx --test ./test/**/*.spec.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
@@ -90,6 +91,7 @@
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.2",
     "tslib": "2.5.0",
+    "tsx": "3.12.1",
     "typescript": "4.9.5"
   },
   "jest": {
