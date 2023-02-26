@@ -7,7 +7,6 @@ import authConfig from './config/auth.config';
 import appConfig from './config/app.config';
 import mailConfig from './config/mail.config';
 import fileConfig from './config/file.config';
-import facebookConfig from './config/facebook.config';
 import googleConfig from './config/google.config';
 import appleConfig from './config/apple.config';
 import * as path from 'path';
@@ -15,7 +14,6 @@ import { MailerModule } from '@nestjs-modules/mailer';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthAppleModule } from './auth-apple/auth-apple.module';
-import { AuthFacebookModule } from './auth-facebook/auth-facebook.module';
 import { AuthGoogleModule } from './auth-google/auth-google.module';
 import { I18nModule } from 'nestjs-i18n/dist/i18n.module';
 import { HeaderResolver } from 'nestjs-i18n';
@@ -36,7 +34,6 @@ import { DataSource } from 'typeorm';
         appConfig,
         mailConfig,
         fileConfig,
-        facebookConfig,
         googleConfig,
         appleConfig,
       ],
@@ -72,7 +69,6 @@ import { DataSource } from 'typeorm';
     UsersModule,
     FilesModule,
     AuthModule,
-    AuthFacebookModule,
     AuthGoogleModule,
     AuthAppleModule,
     ForgotModule,

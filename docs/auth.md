@@ -13,7 +13,7 @@ sequenceDiagram
     A->>B: 4. Make any requests using a JWT token
 ```
 
-Also you can sign up via another external services or social networks like Apple, Facebook and Google.
+Also you can sign up via another external services or social networks like Apple and Google.
 
 ```mermaid
 sequenceDiagram
@@ -34,8 +34,6 @@ For auth with external services or social networks you need:
 1. Call one of endpoints with access token received in frontend app on 1-st step and get JWT token from the backend app.
 
     ```text
-    POST /api/v1/auth/facebook/login
-
     POST /api/v1/auth/google/login
     
     POST /api/v1/auth/apple/login
@@ -49,7 +47,6 @@ For auth with external services or social networks you need:
 
 - [Configure Auth](#configure-auth)
 - [Auth via Apple](#auth-via-apple)
-- [Auth via Facebook](#auth-via-facebook)
 - [Auth via Google](#auth-via-google)
 
 ---
@@ -75,16 +72,6 @@ For auth with external services or social networks you need:
 
     ```text
     APPLE_APP_AUDIENCE=["com.company", "com.company.web"]
-    ```
-
-## Auth via Facebook
-
-1. Set up your service on Facebook
-1. Change `FACEBOOK_APP_ID` and `FACEBOOK_APP_SECRET` in `.env`
-
-    ```text
-    FACEBOOK_APP_ID=abc
-    FACEBOOK_APP_SECRET=abc
     ```
 
 ## Auth via Google
