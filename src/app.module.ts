@@ -76,4 +76,4 @@ import { DataSource } from 'typeorm';
     HomeModule,
   ],
 })
-export class AppModule { }
+export class AppModule {}
