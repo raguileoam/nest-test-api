@@ -77,7 +77,7 @@ npm run start:dev
 
 ## Links
 
-- Swagger: http://localhost:3000/docs
+- Swagger: http://localhost:3000/docs (/docs-json for Swagger JSON file)
 - Adminer (client for DB): http://localhost:8080
 - Maildev: http://localhost:1080
 
@@ -90,7 +90,7 @@ If you want to automatically update dependencies, you can connect [Renovate](htt
 Generate migration
 
 ```bash
-npm run migration:generate -- src/database/migrations/CreateNameTable 
+npm run migration:generate -- src/database/migrations/CreateNameTable
 ```
 
 Run migration
